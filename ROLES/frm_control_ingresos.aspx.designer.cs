@@ -24,13 +24,40 @@ namespace ROLES
         protected global::System.Web.UI.WebControls.TextBox txt_id;
 
         /// <summary>
-        /// Control txt_nombre.
+        /// Control txt_pnombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_nombre;
+        protected global::System.Web.UI.WebControls.TextBox txt_pnombre;
+
+        /// <summary>
+        /// Control txt_snombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_snombre;
+
+        /// <summary>
+        /// Control txt_papellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_papellido;
+
+        /// <summary>
+        /// Control txt_sapellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_sapellido;
 
         /// <summary>
         /// Control txt_contacto.
@@ -60,13 +87,13 @@ namespace ROLES
         protected global::System.Web.UI.WebControls.DropDownList ddl_sexo;
 
         /// <summary>
-        /// Control sqlDataSourceSexo.
+        /// Control SqlDataSourceSexo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource sqlDataSourceSexo;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceSexo;
 
         /// <summary>
         /// Control btn_guardar.
