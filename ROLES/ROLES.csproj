@@ -68,9 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="frm_control_ingresos.aspx" />
+    <Content Include="frm_asignar_rol.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cls_asignar_rol.cs" />
     <Compile Include="cls_conexion.cs" />
     <Compile Include="cls_roles.cs" />
     <Compile Include="frm_control_ingresos.aspx.cs">
@@ -79,6 +81,13 @@
     </Compile>
     <Compile Include="frm_control_ingresos.aspx.designer.cs">
       <DependentUpon>frm_control_ingresos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_asignar_rol.aspx.cs">
+      <DependentUpon>frm_asignar_rol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_asignar_rol.aspx.designer.cs">
+      <DependentUpon>frm_asignar_rol.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
