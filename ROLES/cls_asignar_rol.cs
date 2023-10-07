@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Web;
 
 namespace ROLES
 {
@@ -27,20 +24,17 @@ namespace ROLES
                 objConecta.connection.Open();
                 con.ExecuteNonQuery();
                 objConecta.connection.Close();
-                str_mensaje = "Persona  y Rol registrados con éxito";
+                str_mensaje = "Rol asignado con éxito";
             }
             catch (Exception ex)
             {
                 str_mensaje = "Error: " + ex.Message;
             }
-
-
         }
-
 
         public string getMensaje() { return this.str_mensaje; }
         public string getUsuario() { return this.str_usuario; }
-        public string getFecha() { return this.str_fecha; }
         public int getRol() { return this.int_rol; }
+        public string getFecha() { return this.str_fecha; }
     }
 }

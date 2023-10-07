@@ -20,14 +20,11 @@ namespace ROLES
             cls_asignar_rol objRol = new cls_asignar_rol();
 
             string usuario = txt_usuario.Text;
-            string fecha = DateTime.ParseExact(txt_fecha.Text, "yyyy/MM/dd", CultureInfo.InvariantCulture).ToString("yyyy/MM/dd");
+            string fecha = txt_fecha.Text; // No es necesario convertirlo aquí, ya que se hace en el método
 
             if (int.TryParse(ddl_rol.SelectedValue, out int rol))
             {
-
                 objRol.fnt_agregarpersona(usuario, rol, fecha);
-
-
                 lbl_mensaje.Text = objRol.getMensaje();
             }
             else
