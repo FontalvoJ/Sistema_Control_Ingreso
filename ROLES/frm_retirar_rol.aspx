@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frm_asignar_rol.aspx.cs" Inherits="ROLES.frm_retirar_rol" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frm_retirar_rol.aspx.cs" Inherits="ROLES.frm_retirar_rol1" %>
 
 <!DOCTYPE html>
 
@@ -11,7 +11,7 @@
 <body>
     <form runat="server">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">IngresoControlPro</a>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-md-6 offset-md-3">
                     <div class="mb-1">
-                        <h3>Asignar Rol</h3>
+                        <h3>Retirar Rol</h3>
                     </div>
                     <div class="shadow p-4">
 
@@ -43,16 +43,12 @@
                         </div>
 
                         <div class="mb-1">
-                            <asp:DropDownList ID="ddl_rol" placeholder="Asignar Rol" class="form-control" runat="server" DataTextField="Nombre" DataValueField="PKCodigo" DataSourceID="SqlDataSourceRol"></asp:DropDownList>
+                            <asp:DropDownList ID="ddl_rol" placeholder="Rol a Retirar" class="form-control" runat="server" DataTextField="Nombre" DataValueField="PKCodigo" DataSourceID="SqlDataSourceRol"></asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSourceRol" runat="server" ConnectionString="<%$ ConnectionStrings:dbs_rolesConnectionString %>" SelectCommand="SELECT [PKCodigo], [Nombre] FROM [tbl_roles]"></asp:SqlDataSource>
                         </div>
 
                         <div class="mb-1">
-                            <asp:TextBox ID="txt_fecha" placeholder="Fecha Caducidad" class="form-control" runat="server"></asp:TextBox>
-                        </div>
-
-                        <div class="mb-1">
-                            <asp:Button ID="btn_registrarrol" Text="Registrar Rol" class="btn btn-dark btn-md mr-2" runat="server" OnClick="btn_registrarrol_Click" />
+                            <asp:Button ID="btn_retirarrrol" Text="Retirar Rol" class="btn btn-dark btn-md mr-2" runat="server" OnClick="btn_retirarrrol_Click" />
                             <asp:Button ID="btn_nuevo" runat="server" Text="Nuevo" class="btn btn-dark btn-md mr-2" OnClick="btn_nuevo_Click" />
                         </div>
 
@@ -68,5 +64,6 @@
             </div>
         </div>
     </form>
+
 </body>
 </html>

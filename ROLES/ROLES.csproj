@@ -69,11 +69,14 @@
   <ItemGroup>
     <Content Include="frm_control_ingresos.aspx" />
     <Content Include="frm_asignar_rol.aspx" />
+    <Content Include="frm_retirar_rol.aspx" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cls_asignar_rol.cs" />
     <Compile Include="cls_conexion.cs" />
+    <Compile Include="cls_retirar_rol.cs" />
     <Compile Include="cls_roles.cs" />
     <Compile Include="frm_control_ingresos.aspx.cs">
       <DependentUpon>frm_control_ingresos.aspx</DependentUpon>
@@ -89,9 +92,17 @@
     <Compile Include="frm_asignar_rol.aspx.designer.cs">
       <DependentUpon>frm_asignar_rol.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frm_retirar_rol.aspx.cs">
+      <DependentUpon>frm_retirar_rol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_retirar_rol.aspx.designer.cs">
+      <DependentUpon>frm_retirar_rol.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -10,6 +10,27 @@
 </head>
 <body>
     <form runat="server">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">IngresoControlPro</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="frm_control_ingresos.aspx">Registrar Usuario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="frm_asignar_rol.aspx">Asignar Rol</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="frm_retirar_rol.aspx">Retirar Rol</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <div class="container mt-4">
             <div class="row">
                 <div class="col-md-6 offset-md-3">
@@ -63,7 +84,7 @@
 
                         <hr>
 
-                        <p class="text-center mb-0">Este proyecto estará bajo licencia y derechos de autor propiedad de FontalvoJ</p>
+                        <p class="text-center mb-0">COPYRIGHT @FontalvoJ</p>
                     </div>
                 </div>
             </div>
